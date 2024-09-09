@@ -127,7 +127,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Optional: Configure allowed hosts for Render deployment
-ALLOWED_HOSTS = ['helloword-cflo.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['helloworld-cflo.onrender.com', 'localhost']
 
 
 # Default primary key field type
