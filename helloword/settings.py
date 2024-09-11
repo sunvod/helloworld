@@ -98,11 +98,12 @@ WSGI_APPLICATION = 'helloword.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'helloworld',         # The name of your PostgreSQL database
-        'USER': 'helloworld',         # The PostgreSQL user
-        'PASSWORD': 'Helloworld21!%',          # The PostgreSQL user's password
-        'HOST': 'localhost',                  # Set to the database host (default is localhost)
-        'PORT': '5432',                       # Default PostgreSQL port
+        'NAME': 'helloworld',            # The name of your PostgreSQL database
+        'USER': 'helloworld',            # The PostgreSQL user
+        'PASSWORD': 'Helloworld21!%',    # The PostgreSQL user's password
+        'HOST': '93.43.198.172',
+#       'HOST': 'localhost',             # Set to the database host (default is localhost)
+        'PORT': '5432',                  # Default PostgreSQL port
     }
 }
 
