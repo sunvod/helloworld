@@ -90,7 +90,8 @@ DATABASES = {
         'NAME': 'helloword',
         'USER': 'root',
         'PASSWORD': 'Dottvale21!%',
-        'HOST': '93.43.198.172',
+        'HOST': 'localhost',
+        # 'HOST': '93.43.198.172',
         'PORT': '3306',
     }
 }
