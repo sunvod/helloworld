@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -84,18 +83,28 @@ WSGI_APPLICATION = 'helloword.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'helloword',
+#         'USER': 'root',
+#         'PASSWORD': 'Dottvale21!%',
+#         'HOST': 'localhost',
+#         # 'HOST': '93.43.198.172',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'helloword',
-        'USER': 'root',
-        'PASSWORD': 'Dottvale21!%',
-        'HOST': 'localhost',
-        # 'HOST': '93.43.198.172',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'helloworld',         # The name of your PostgreSQL database
+        'USER': 'helloworld',         # The PostgreSQL user
+        'PASSWORD': 'Helloworld21!%',          # The PostgreSQL user's password
+        'HOST': 'localhost',                  # Set to the database host (default is localhost)
+        'PORT': '5432',                       # Default PostgreSQL port
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
