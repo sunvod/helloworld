@@ -85,8 +85,16 @@ WSGI_APPLICATION = 'helloword.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.config(conn_max_age=600)
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'helloword',
+        'USER': 'root',
+        'PASSWORD': 'Dottvale21!%',
+        'HOST': '93.43.198.172',
+        'PORT': '3306',
+    }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
