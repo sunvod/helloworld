@@ -102,8 +102,8 @@ DATABASES = {
         'USER': 'helloworld',            # The PostgreSQL user
         'PASSWORD': 'Helloworld21!%',    # The PostgreSQL user's password
         'HOST': '93.43.198.172',
-#       'HOST': 'localhost',             # Set to the database host (default is localhost)
-        'PORT': '5432',                  # Default PostgreSQL port
+        # 'HOST': 'localhost',             # Set to the database host (default is localhost)
+        # 'PORT': '5432',                  # Default PostgreSQL port
     }
 }
 
