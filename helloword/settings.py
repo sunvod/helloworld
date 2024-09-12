@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'contact.apps.ContactConfig'
+    'contact'
 ]
 
 MIDDLEWARE = [
@@ -51,12 +51,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'helloword.urls'
+ROOT_URLCONF = 'contact.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR / 'contact/templates']
       ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -153,3 +153,8 @@ ALLOWED_HOSTS = ['helloworld-cflo.onrender.com', 'localhost']
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Login application
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/login/'
+
